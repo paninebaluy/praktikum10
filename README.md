@@ -30,7 +30,7 @@
 4. Web site
    * must start with *http://* or *https://*
    * must contain a domain name or an IP address; *supports cyrillic domain names*
-   * could contain: *www*, port (*:8080) - 2 to 5 digits after a colon,
+   * could contain: *www*, port (:8080) - 2 to 5 digits after a colon,
    * could contain: path - latin characters, slashes and digits
    * could contain: one hash character (*#*) at the end
 
@@ -72,7 +72,7 @@
 4. Сайт
    * адрес должен начинаться с протокола: *http://* или *https://*
    * должен содержать доменное имя или IP-адрес; *поддерживаются кириллические доменные имена*
-   * также может содержать: *www*, порт (*:8080) - от 2 до 5 символов после двоеточия
+   * также может содержать: *www*, порт (:8080) - от 2 до 5 символов после двоеточия
    * также может содержать: путь - последовательность, состоящая из латиницы, слэшей и цифр
    * также может содержать: один символ *#* в конце
 
@@ -83,4 +83,4 @@
 + регулярные выражения; [вот полезный инструмент для онлайн-тестирования](https://regex101.com/)
 + [GitHub Pages](https://pages.github.com/)
 
-[Back to top](#en)
+[Go to top](#en)
