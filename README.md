@@ -7,13 +7,14 @@
 1. Name:
    + accepts cyrillic characters *only*, 2 to 20 symbols
    + first letter of every word must be capitalized
+   + double names separated by dash are allowed
 
 2. Email:
    + accepts only latin characters, underscores, digits and dash symbols
    + **@** and **.** are mandatory symbols
 
 3. Phone number
-   acceptable formats:
+   - acceptable formats:
      + +7(925)900-90-90
      + +7(925) 900-90-90
      + +7 925-900-90-90
@@ -30,5 +31,5 @@
 + native JavaScript
 + CSS
 + HTML
-+ regular expressions [here's a useful tool for online testing](https://regex101.com/)
++ regular expressions; [here's a useful tool for online testing](https://regex101.com/)
 + [GitHub Pages](https://pages.github.com/)
