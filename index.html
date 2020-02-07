@@ -16,28 +16,29 @@
             <h1 class="cover__heading">RegExp</h1>
         </div>
         <div class="block">
-            <form novalidate class="form" name="register" action="http://httpbin.org/post" method="POST">
+            <form class="form" name="register" action="http://httpbin.org/post" method="POST">
                 <h3>Форма регистрации</h3>
                 <fieldset class="form__fieldset">
                     <div class="form__field">
                         <input class="form__input" type="text" name="name" 
                         pattern="(^[А-ЯЁ][а-яё]{1,})(([\u{002D}\u{0035}\u{0035}\u{2012}-\u{2015}])([А-ЯЁ][а-яё]+))?(\s[А-ЯЁ][а-яё]+)?$" 
                         placeholder="Имя" required minlength="2" maxlength="20" />
-                        <span class="form__error">Имя кириллицей, начиная с прописной. Разрешены двойные имена через тире или дефис.</span>
+                        <span class="form__error">Только кириллица, первые буквы &mdash; прописные. Разрешены двойные имена через тире или дефис.</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="name" pattern="^[A-Za-z-_0-9]+\u{0040}[A-Za-z-_0-9]+\.[A-Za-z]{2,}$" placeholder="E-Mail" />
+                        <input class="form__input" type="email" name="email" pattern="^[A-Za-z-_0-9]+\u{0040}[A-Za-z-_0-9]+\.[A-Za-z]{2,}$" placeholder="E-Mail" />
                         <span class="form__error">e-mail в формате: sega@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="^\+?\d{1,3}\s?\(?\d{1,6}\)?[\s-]?\d{1,3}-?\d{1,3}-*\d*$"
-                        minlength="11" maxlength="20" /> 
-                        <!-- паттерн подобран для номеров телефона с разными кодами стран (от 1 до 3 символов) и регионов, а также разной длиной номера после кода региона -->
+                        <input class="form__input" type="tel" name="phone" placeholder="Телефон" 
+                        pattern="^(\+?\d{11})|(\+7\s?\(?\d{3}\)?[\s-]?\d{3}-\d{2}-\d{2})|(\+\d{2,3}\s?\(\d{2,3}\)[\s-]\d{3}-\d{2}-\d{2})$"
+                        minlength="11" maxlength="18" /> 
+                        <!-- паттерн подобран для номеров телефона с разными кодами стран (от 1 до 3 символов) и регионов (от 2 до 3 символов) -->
                         <span class="form__error">телефон в формате: +7 (123) 456-78-90</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="name" 
-                        pattern="^(http|https):\/\/(w{3}\.)?(([А-ЯЁа-яёA-Za-z1-9_-]+\.[А-ЯЁа-яёA-Za-z1-9_-]+(\.[А-ЯЁа-яёA-Za-z_-]+)*)|(((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)))(:\d{2,5})?(\/[A-Za-z1-9\/-]*)?#?$" 
+                        <input class="form__input" type="url" name="url" 
+                        pattern="^(http|https):\/\/(w{3}\.)?(?!www)(([А-ЯЁа-яёA-Za-z1-9_-]+\.[А-ЯЁа-яёA-Za-z1-9_-]+(\.[А-ЯЁа-яёA-Za-z_-]+){0,2})|(((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)))(:\d{2,5})?(\/[A-Za-z1-9\/-]*)?#?$" 
                         placeholder="Ваш сайт" />
                         <!-- добавила поддержку кириллических доменов -->
                         <span class="form__error">URL в формате: http://mysite.ru</span>
