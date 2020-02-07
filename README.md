@@ -5,6 +5,9 @@
 # RegExp Form
 ## A sample form which uses regular expressins for input validation
 
+##### current version: 0.02
+[this form on GitHub Pages](https://paninebaluy.github.io/praktikum10/)
+
 #### Input fields:
 
 1. Name
@@ -25,7 +28,7 @@
      + +79259009090
      + 89259009090
      * +380 (99) 335-88-88
-     * +7 (77732) 333-33
+     * +42 (44) 333-33-33
 
 4. Web site
    * must start with *http://* or *https://*
@@ -45,6 +48,9 @@
 
 # Форма с регэкспами
 ## Форма, использующая регулярные выражения для валидации полей
+
+##### текущая версия: 0.02
+[эта форма на GitHub Pages](https://paninebaluy.github.io/praktikum10/)
 
 #### Поля:
 
@@ -67,7 +73,7 @@
      + +79259009090
      + 89259009090
      * +380 (99) 335-88-88
-     * +7 (77732) 333-33
+     * +42 (44) 333-33-33
 
 4. Сайт
    * адрес должен начинаться с протокола: *http://* или *https://*
